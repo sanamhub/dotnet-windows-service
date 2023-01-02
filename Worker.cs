@@ -29,7 +29,7 @@ public class Worker : BackgroundService
                 }
             }
 
-            await Task.Delay(Convert.ToInt32(delayInMilliseconds), stoppingToken);
+            await Task.Delay(delayInMilliseconds, stoppingToken);
         }
     }
 }
