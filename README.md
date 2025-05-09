@@ -1,8 +1,6 @@
 # 🎗️ .NET Windows Service Template
 
-A minimal and clean template to help you create a Windows Service in .NET.
-
----
+A minimal and clean template to help you create a Windows Service in .NET
 
 ## 🚀 Getting Started
 
@@ -28,8 +26,6 @@ cd dotnet-windows-service
 
 Edit the `Worker.cs` file to implement your service logic.
 
----
-
 ## 🧪 Run in Console Mode (For Testing)
 
 ```sh
@@ -37,8 +33,6 @@ dotnet run
 ```
 
 Logs will appear in the terminal while running in console mode.
-
----
 
 ## ⚙️ Publish and Install as a Windows Service
 
@@ -59,23 +53,17 @@ sc.exe create MyService binPath= "C:\path\to\your\project\publish\WindowsService
 > [!IMPORTANT]
 > 🛑 Replace the path with your actual publish folder path.
 
----
-
 ## 🧹 Uninstalling the Service
 
 ```sh
 sc.exe delete MyService
 ```
 
----
-
 > [!NOTE]
 >
 > - Always run the command prompt as **Administrator** when installing or uninstalling the service.
 > - You can manage the service using `services.msc` (Start, Stop, Restart).
 > - Customize logging, interval, or behavior inside `Worker.cs`.
-
----
 
 <div align="center">
   <samp>
