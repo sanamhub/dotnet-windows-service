@@ -15,7 +15,8 @@ public class Worker : BackgroundService
         double createdMinToDelete = _configuration.GetValue<double>("Service:DeleteFileCreatedBeforeWhatMin");
         string? folderToWatch = _configuration.GetValue<string>("Service:WatchDirectory");
 
-        if (!Directory.Exists(folderToWatch)) Directory.CreateDirectory(folderToWatch);
+        if (!Directory.Exists(folderToWatch))
+            Directory.CreateDirectory(folderToWatch);
 
         while (!stoppingToken.IsCancellationRequested)
         {
